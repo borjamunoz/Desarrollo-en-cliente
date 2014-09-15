@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Ejercicio de prueba DNI</title>
+		<script type="text/javascript">
+		var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+			var numDni = prompt('¿Cual es tu DNI?');
+			if(numDni<0 || numDni>99999999){
+				alert("El número está mal");
+			}else{
+				var letraDni = prompt('¿Cual es la letra?');
+				alert(numDni+"-"+letraDni);
+
+				var resto = numDni%23;
+				var letraNueva = letras[resto];
+				
+				if(letraDni==letraNueva){
+					alert("La letra introducida es correcta: "+letraNueva);
+				}else{
+					alert("La letra introducida NO es correcta");
+				}
+			}
+ 		</script> 
+	</head>
+	<body>
+	</body>
+</html>
