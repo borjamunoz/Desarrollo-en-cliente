@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ejercicio 2 - funciones</title>
+	<script type="text/javascript">
+
+		var pal = prompt("Introduce la palabra");
+
+		function info(palabra){
+
+			if(palabra.toLowerCase()==palabra){
+				alert("La palabra está en minúsculas");
+			}
+			if(palabra.toUpperCase()==palabra){
+				alert("La palabra está en mayúsculas");
+			}else{
+				alert("La palabra es una mezcla de mayúsculas y minúsculas");
+			}
+		}
+
+		info(pal);
+		
+	</script>
+</head>
+<body>
+</body>
+</html>
