@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Mi página Web</title>
+	<div id='contenedor' name='contenedor'></div>
+  	<script language='javascript' type='text/javascript'>
+     dias = new Array('Lunes','Martes','Miércoles','Jueves',
+                      'Viernes', 'Sábado', 'Domingo');
+     HTML = '<ul>';
+     for(i = 0; i < dias.length; i++) {
+ 	   HTML += '<li>' + dias[i] + '</li>';
+     }
+     HTML += '</ul>';
+     document.getElementById('contenedor').innerHTML = HTML;
+  </script>
+  <body>
+</body>
+</html>

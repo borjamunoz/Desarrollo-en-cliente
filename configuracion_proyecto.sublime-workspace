@@ -67,10 +67,7 @@
 	},
 	"console":
 	{
-		"height": 0.0,
-		"history":
-		[
-		]
+		"height": 0.0
 	},
 	"distraction_free":
 	{
@@ -83,6 +80,7 @@
 	},
 	"file_history":
 	[
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo2.html",
 		"/D/Borja/Desarrollo-en-cliente/1er TRIMESTRE/ejercicios/ejercicio_basicos2",
 		"/D/Borja/Desarrollo-en-cliente/1er TRIMESTRE/ejercicios/ejercicio_basicos6.html",
 		"/D/Borja/Web cliente/1er TRIMESTRE/ejercicios/ejercicioDni.html",
@@ -167,7 +165,6 @@
 	{
 		"height": 0.0
 	},
-	"project": "configuracion_proyecto.sublime-project",
 	"replace":
 	{
 		"height": 0.0
@@ -183,30 +180,20 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/home/zubiri/Documentos/Trabajos/disenio-interfaces/disenio.sublime-project"
+			]
 		],
-		"width": 0.0
-	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"settings":
-	{
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 150.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }

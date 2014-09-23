@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Mi página Web</title>
+    <script language='JavaScript'>
+  function cambiarColor( color ) { 
+    var elemento = document.getElementById('parrafo');
+	elemento.style.font = 'bold italic 16 pt Verdana';
+    elemento.style.color = color; 
+  }
+</script> 
+</head>  
+<body> 
+  <p id='parrafo'>Mis colores favoritos. ¿Adivina por qué?</p> 
+   <button onclick = cambiarColor('blue')>Azul</button> 
+   <button onclick = cambiarColor('red')>Rojo</button> 
+</body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Mi página Web</title>
+    <script language='JavaScript'>
+function saludo() {
+  var horario = new Date()
+  var hora = horario.getHours();
+  if( hora < 12 ) { 
+    var mensaje = 'Buenos dias!';
+    }else if (hora >= 12  && hora <= 19) {
+      var mensaje = 'Buenas tardes!';
+    } else {
+      var mensaje = 'Buenas noches!';
+    }
+  mensaje = '¡Hola Mundo. ' + mensaje;
+  return mensaje;
+  }
+  document.write(saludo());
+  </script>
+</head>
+<body>
+</body>
+</html>

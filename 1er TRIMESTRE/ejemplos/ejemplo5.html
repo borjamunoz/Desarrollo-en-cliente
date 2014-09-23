@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Mi página Web</title>
+    <script language='JavaScript'>
+	var n = 0;
+	function sumarHijo() {
+	  n++;
+	  if( n <=6) { 	
+	    var nuevoElemento = document.createElement('div');
+		
+		  if(n <= 5) {
+		    nuevoElemento.innerHTML = 'mi color favorito';
+		    nuevoElemento.style.color = 'red';
+		  }else if ( n == 6) {
+		      nuevoElemento.innerHTML = 'No abuses';
+		      nuevoElemento.style.color = 'blue';
+			  nuevoElemento.style.fontSize = '40px';
+		  	}
+		    var contenedor = document.getElementById('contenedor');
+		    contenedor.appendChild(nuevoElemento);
+	  }
+	}
+  </script>
+</head>
+<body>
+		<button onclick=sumarHijo()>Sumar un nuevo elemento</button>
+		<div id='contenedor'></div>
+</body>
+</html>
