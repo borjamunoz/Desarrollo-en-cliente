@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Validar un formulario web</title>
+	<script language="Javascript">
+	function validar_formulario()
+	{
+		 var posArroba = document.getElementById("email").value.indexOf("@")
+		 var      edad = document.getElementById("edad").value
+		 var    nombre = document.getElementById("nombre").value
+
+		 submitOK = true;
+
+		 if (nombre.length>10)
+		 {
+			 alert("El nombre debe tener como máximo 10 caracteres.");
+			 submitOK = false;
+		 }
+
+		 if (isNaN(edad) || (edad < 1) || (edad > 100))
+		 {
+			 alert("La edad debe encontrarse entre 1 y 100.");
+			 submitOK = false;
+		 }
+
+		 if (posArroba == -1) 
+		 {
+			 alert("La dirección de e-mail no es válida. Falta la arroba.")
+			 submitOK = false;
+		 }
+
+		 if (submitOK == false)
+		 {
+		     return false;
+		 }
+		 
+		 return submitOK;
+	}
+</script>
+</head>
+<body>
+<font face="Arial" size="2" color="#000000"> 
+	<form  
+        action="http://www.respuesta.fictica.a.formulario.com/form.jsp"  
+        onsubmit="return validar_formulario();">
+	        	Nombre (máx. 10 cararacteres): <input type="text" id="nombre" size="20"><br/>
+	     	Edad (de 1 a 100): <input type="text" id="edad" size="20"><br/>
+	     	E-mail: <input type="text" id="email" size="20"><br/>
+		<br />
+	<input type="submit" value="Aceptar"> 
+</font>
+</form>
+</body>
+</html>

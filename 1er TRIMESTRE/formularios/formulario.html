@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+<title>Lista desplegable y evento onChange</title>
+<script language="Javascript">
+	function ir1() 
+	{
+		window.location = document.getElementById("menu1").value
+	}
+
+	function ir2() 
+	{
+		window.location = document.getElementById("menu2").value
+	}
+</script>
+</head>
+
+<body>
+<form>
+<font face="Arial" size="2" color="#000000"> 
+	<select id="menu1">
+	  <option>--Seleccione una página--</option>
+	  <option value="http://www.google.com">Google</option>
+	  <option value="http://www.microsoft.com">Microsoft</option>
+	  <option value="http://www.altavista.com">AltaVista</option>
+	</select>
+	<input type="button" value="Ir a..." onclick="ir1();"> 
+</font>
+<br/>
+<hr>
+<br/>
+<font face="Arial" size="2" color="#000000"> 
+	<select id="menu2" onchange="ir2();">
+	  <option>--Seleccione una página--</option>
+	  <option value="http://www.google.com">Google</option>
+	  <option value="http://www.microsoft.com">Microsoft</option>
+	  <option value="http://www.altavista.com">AltaVista</option>
+	</select>
+</font>
+</form>
+</body>
+</html>

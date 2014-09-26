@@ -55,6 +55,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "1er TRIMESTRE/formularios/formulario.html",
+			"settings":
+			{
+				"buffer_size": 1096,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -80,7 +88,14 @@
 	},
 	"file_history":
 	[
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo2.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/url_formulario.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/form_validado.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo3.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo4.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo5.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo6.html",
 		"/D/Borja/Desarrollo-en-cliente/1er TRIMESTRE/ejercicios/ejercicio_basicos2",
 		"/D/Borja/Desarrollo-en-cliente/1er TRIMESTRE/ejercicios/ejercicio_basicos6.html",
 		"/D/Borja/Web cliente/1er TRIMESTRE/ejercicios/ejercicioDni.html",
@@ -125,8 +140,36 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "1er TRIMESTRE/formularios/formulario.html",
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -136,7 +179,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"layout":
 	{

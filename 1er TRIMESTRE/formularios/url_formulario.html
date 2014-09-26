@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+	<title>Mostar URL de un formulario web</title>
+	<script type="text/javascript">
+		function mostrarURLWebForm()
+	    {
+		   var frm = document.getElementById("miForm");
+		   alert('La URL a la que apunta el form de esta página es: '+frm.action);
+		}
+	</script>
+  	</head>
+	<body>
+		<font face="Arial" size="2" color="#000000"> 
+			<form id="miForm" action="http://www.respuesta.fictica.a.formulario.com/form.jsp" method="post">Campo: <input type="text" size="20" value="Dato campo"/>
+			<input type="button" onclick="mostrarURLWebForm()" value="Mostrar URL form"/> 
+			</form>
+		</font>
+	</body>
+</html>
