@@ -56,10 +56,10 @@
 	"buffers":
 	[
 		{
-			"file": "1er TRIMESTRE/formularios/formulario.html",
+			"file": "1er TRIMESTRE/desplegable/desplegable.html",
 			"settings":
 			{
-				"buffer_size": 1096,
+				"buffer_size": 3881,
 				"line_ending": "Unix"
 			}
 		}
@@ -88,6 +88,8 @@
 	},
 	"file_history":
 	[
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/formulario.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/galeria/index.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo2.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/url_formulario.html",
@@ -145,18 +147,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "1er TRIMESTRE/formularios/formulario.html",
+					"file": "1er TRIMESTRE/desplegable/desplegable.html",
 					"settings":
 					{
-						"buffer_size": 1096,
+						"buffer_size": 3881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								70,
-								70
+								595,
+								595
 							]
 						],
 						"settings":
@@ -165,7 +167,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
