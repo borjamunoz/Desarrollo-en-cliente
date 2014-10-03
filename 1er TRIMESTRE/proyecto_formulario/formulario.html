@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>.:Formulario:.</title>
+		<script>
+			function validacion(){
+				if(document.formulario_2.usuario.value!="" 
+					&& document.formulario_2.contrasena.value!=""
+					&& document.formulario_2.repetir.value!=""
+					&& document.formulario_2.email.value!=""
+					&& validar_radio()!=false
+					&& document.formulario_2.fecha_nac.value!="")
+					{	
+						alert("¡¡Todo correcto campeón!!");
+					//if(validarUsuario(document.formulario_2.usuario.value)!=true){
+						//alert("¡¡Todo correcto campeón");
+					//}
+					
+					}else{
+						alert("¡¡NO puedes dejar campos vacíos!!");
+						validar_radio();
+					}
+				}
+			function validar_radio(){
+				var elem=document.forms['formulario_2'].elements['sex'];
+				len=elem.length-1;
+				chkvalue='';
+				for(i=0; i<=len; i++){
+					if(elem[i].checked)chkvalue=elem[i].value;	
+				}
+				if(chkvalue==''){
+					return false;
+				}
+				return true;
+			}
+			function validarUsuario(user) {
+    			 var error = "";
+   				 var illegalChars = /\W/; // permite letras, números...
+ 
+    			if (user.value == "") {
+      			  	user.style.background = 'Yellow'; 
+       			  	error = "You didn't enter a username.\n"; } 
+       		    else if ((user.value.length < 3) || (user.value.length > 15)) {
+        				user.style.background = 'Yellow'; 
+        				error = "The username is the wrong length.\n";}
+        	    else if (illegalChars.test(user.value)) {
+        				user.style.background = 'Yellow'; 
+        				error = "The username contains illegal characters.\n";} 
+        		else {
+        				user.style.background = 'White';} 
+    			if(error!=""){
+    				alert(error+"lll");
+    				return true;
+    			}else{
+    				return false;
+    			}
+    			//return error;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formulario_2">
+			<p>Usuario: </p><input type="text" name="usuario"><br>
+			<p>Contraseña: </p><input type="text" name="contrasena"><br>
+			<p>Repetir contraseña: </p><input type="text" name="repetir"><br>
+			<p>e-mail: </p><input type="text" name="email"><br>
+			<input type="radio" name="sex" value="hombre">Hombre<br>
+			<input type="radio" name="sex" value="mujer">Mujer<br>
+			<p>Fecha nacimiento: </p><input type="text" name="fecha_nac"><br>
+			<br/><input type="button" value="Nuevo usuario" onclick="validacion()">
+		</form>
+	</body>
+</hmtl>
