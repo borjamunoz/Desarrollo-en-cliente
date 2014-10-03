@@ -88,11 +88,12 @@
 	},
 	"file_history":
 	[
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/proyecto_formulario/index.html",
+		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/url_formulario.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/formulario.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/galeria/index.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo2.html",
-		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/url_formulario.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/formularios/form_validado.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo3.html",
 		"/home/zubiri/Documentos/Trabajos/Desarrollo-en-cliente/1er TRIMESTRE/ejemplos/ejemplo4.html",
@@ -157,8 +158,8 @@
 						"selection":
 						[
 							[
-								595,
-								595
+								0,
+								0
 							]
 						],
 						"settings":
@@ -167,7 +168,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 486.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -230,7 +231,7 @@
 		[
 			[
 				"",
-				"/home/zubiri/Documentos/Trabajos/disenio-interfaces/disenio.sublime-project"
+				"/home/zubiri/Documentos/Trabajos/disenio-interfaces/web_noticias/pintxopo.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -239,6 +240,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 214.0,
 	"status_bar_visible": true
 }
