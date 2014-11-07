@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Arrays 2</title>
+    <script language="Javascript">
+		var array1 = new Array();
+		var array2 = new Array();
+		var array3 = new Array();
+		var suma = 0;
+
+		for(var i = 0; i < 5; i++){
+			
+			array1[i] = parseInt(prompt("Array 1, posición: "+ (i+1) +" Introduzca un número..."));
+			document.write("Array 1, posición: "+(i+1)+" número: "+array1[i]+"<br/>");
+			
+			array2[i] = parseInt(prompt("Array 2, posición: "+ (i+1) +" Introduzca un número..."));
+			document.write("Array 2, posición: "+(i+1)+" número: "+array2[i]+"<br/>");
+
+			array3[i] = array1[i]+array2[i];
+
+			document.write("Array 3, posición: "+(i+1)+" número: "+array3[i]+"<br/>");
+		}
+		
+	</script>
+</head>
+<body>
+</body>

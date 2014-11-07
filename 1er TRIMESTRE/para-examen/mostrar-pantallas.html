@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Mostrar pantallas</title>
+    <script language='JavaScript'>
+      var respuesta = prompt('Introduce tu nombre') + " " + prompt('Introduce tus apellidos');
+      
+      alert('Tu eres: '+respuesta);
+
+      var eleccion = confirm('¿Quieres salir del documento?');
+      
+      if(eleccion){
+          close();
+      }else{
+        document.write('Bienvenido '+respuesta);
+      }
+  </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Arrays 1</title>
+    <script language="Javascript">
+		var elementos = new Array();
+		var suma = 0;
+		var mayor36 = 0;
+		var mayor50 = 0;
+
+		for(var i = 0; i < 8; i++){
+			elementos[i] = parseInt(prompt("Introduzca un número"));
+			document.write(elementos[i]+"<br/>");
+			suma+=elementos[i];
+			if(elementos[i]>36){
+				mayor36++;
+			}
+			if(elementos[i]>50){
+				mayor50++;
+			}
+		}
+
+		document.write('La suma de los elementos es: '+suma+'. Hay '+mayor36+' elementos mayores que 36 y ' +mayor50+' mayor que 50');
+		
+	</script>
+</head>
+<body>
+</body>
+</html>

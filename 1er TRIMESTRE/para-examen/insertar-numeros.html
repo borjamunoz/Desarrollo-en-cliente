@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Insertar números</title>
+    <script language="Javascript">
+		var arrayNumeros = new Array();
+		var mayor10 = 0;
+		var menor50 = 0;
+		var pares = 0; 
+		var num = 1;
+
+		while(num!=0){
+			num = parseInt(prompt("Introduce un número"));
+			if(num!=0){
+				arrayNumeros.push(num);
+				
+				alert(arrayNumeros.length);
+								
+				if(num>10){
+					mayor10++;
+				}
+				if(num<50){
+					menor50++;
+				}
+				if(num%2==0){
+					pares++;
+				}
+			}
+		};
+		
+		document.write("El array tiene "+arrayNumeros.length+" números. "+mayor10+" son mayores que 10, y "+menor50+" son menores que 50. Hay "+pares+" números pares");
+
+		for(var i = 0; i<arrayNumeros.length; i++){
+			document.write("<br>"+arrayNumeros[i]+"<br>");
+		}
+	</script>
+</head>
+<body>
+</body>
