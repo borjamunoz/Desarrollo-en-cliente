@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio THIS 1</title>
+   <script language="JavaScript">
+		function calcula2(caja){
+			var valor=caja.innerHTML; 
+			caja.style.backgroundColor="blue"; 
+			alert(valor);
+		}
+	</script>
+	<style type="text/css">
+		.caja{
+			border: thin solid #00F;
+			background-color:red;
+			width:50px;
+			height:50px;
+			display:inline-block;
+		}
+
+	</style>
+</head>
+<body>
+    <div> 
+		<div class="caja" onclick="calcula2(this)"> A </div>
+		<div class="caja" onclick="calcula2(this)"> B </div>
+		<div class="caja" onclick="calcula2(this)"> C </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio Formularios 8</title>
+    <script type="text/javascript">
+    	
+		function calculaAciertos(){
+			var valor1 = parseInt(document.form1.select1.options [document.form1.select1.selectedIndex].value);
+			var valor2 = parseInt(document.form1.select2.options [document.form1.select2.selectedIndex].value);	
+			var valor3 = parseInt(document.form1.select3.options [document.form1.select3.selectedIndex].value);
+			
+			var aciertos = valor1+valor2+valor3;
+			
+			document.form1.text8.value=aciertos;	
+	
+		}
+    </script>
+</head>
+<body>
+
+            <form name="form1">
+            <label>2+2?:</label>
+            <select size="1" name="select1">
+            	<option value="0">a) 2</option>
+            	<option value="0">b) 0</option>
+            	<option value="1">c) 4</option>
+            </select>
+            <label>Color del caballo blanco de santiago?:</label>
+            <select size="1" name="select2">
+            	<option value="1">Blanco</option>
+            	<option value="0">Negro</option>
+                <option value="0">Incoloro</option>
+            </select>
+            <label>Garfield es?</label>
+            <select size="1" name="select3">
+            	<option value="1">Un gato</option>
+            	<option value="0">Un Perro</option>
+                <option value="0">Un Híbrido</option>
+            </select>
+            <br>
+            Aciertos:<input type="text" name="text8"><br>
+            <input type="button" value="presupuesto" onclick="calculaAciertos()">
+            </form>
+</body>
+</html>

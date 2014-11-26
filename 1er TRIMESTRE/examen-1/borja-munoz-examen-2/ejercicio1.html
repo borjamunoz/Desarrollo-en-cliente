@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 1</title>
+   <script language="JavaScript">
+		function activarText(){
+			//document.form1.text3.value = document.form1.select1.options[document.form1.select1.selectedIndex].value;
+			var valor = document.form1.select1.options[document.form1.select1.selectedIndex].value;
+			
+			if(valor==1){
+				document.form1.text3.readOnly = false;
+			}else{
+				document.form1.text3.readOnly = true;
+			}
+		}
+
+	</script>
+</head>
+<body>
+	  <label>¿Qué hago?</label>
+      <form name="form1">
+            <select size="1" name="select1" onChange="activarText()">
+            	<option value="1">Activar TextBox</option>
+            	<option value="0">Desactivar TextBox</option>
+            </select>
+            <br>
+            Texto a introducir:<br>
+            <input type="text" name="text3">
+         </form>
+
+</body>
+</html>

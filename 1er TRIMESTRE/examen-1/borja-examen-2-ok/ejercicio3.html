@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 3</title>
+    <script type="text/javascript">
+    	function calcularDias(){
+	    	/*
+	    	fecha1 = document.getElementById("fecha").value;
+	       	//arrayFecha1 = fecha1.split("/");
+	       	date1 = new Date(fecha1);
+	       	milis1 = parseInt(date1.getTime() / 1000 / 60 / 60 / 24);
+
+	       	//arrayFecha1 = fecha2.split("/");
+	       	date2 = new Date();
+	       	milis2 = parseInt(date2.getTime() / 1000 / 60 / 60 / 24);
+
+	       	alert("tienes "+parseInt((milis2 - milis1) / 365)+" años.");
+	       	*/
+
+	       	fecha1 = document.getElementById("fecha").value;
+	       	date1 = new Date(fecha1);
+	       	var dia = date1.getDate();
+	       	var mes = date1.getMonth()+1;
+	       	var anio = date1.getFullYear();
+
+	       	fechaSistema = new Date();
+	       	var diaActual = fechaSistema.getDate();
+	       	var mesActual = fechaSistema.getMonth()+1;
+	       	var anioActual = fechaSistema.getFullYear();
+	       	var mesFinal;
+			
+	       	if(mes>=mesActual){
+	       		
+	       		mesFinal = mes - mesActual;
+	       		
+	       		if(dia>diaActual){
+	       			numDias = dia - diaActual;
+	       		}else{
+	       			numDias = diaActual - dia;
+	       		}
+
+	       	}else{
+
+	       		numMeses = 12 - mesActual;
+
+	       		mesFinal = numMeses + mes;
+
+	       		if(dia>diaActual){
+	       			numDias = dia - diaActual;
+	       		}else{
+	       			numDias = diaActual - dia;
+	       		}
+	       	}
+
+	       	alert("Quedan "+mesFinal+" meses y "+numDias+" dias");
+	       	
+		}
+    </script>
+</head>
+<body>
+	<form>
+		<input type="text" name="nombre" id="nombre"/>
+		<input type="text" name="apellido" id="apellido"/>
+		<input type="text" name="fecha" id="fecha"/>
+
+        <input type="button" value="Calcular dias" onclick="calcularDias();">
+    </form>
+</body>
+</html>

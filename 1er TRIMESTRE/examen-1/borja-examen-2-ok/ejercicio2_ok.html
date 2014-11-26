@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 2</title>
+    <script type="text/javascript">
+		function tiene_numeros(){
+		   //Creo las variables que usaremos para recorrer y comparar si hay número o caracter	
+		   var numeros=["0","1","2","3","4","5","6","7","8","9"];
+		   var letras="abcdefghijklmnñopqrstuvwxyz";
+		   //Creo las variables para obtener el texto desde los formularios
+		   var texto = document.getElementById("nombre").value;
+		   var contrasenia = document.getElementById("contrasena").value;
+		   var apellido = document.getElementById("apellido").value;
+		   var apellido2 = document.getElementById("apellido2").value;
+		   var telefono = document.getElementById("telefono").value;
+		   //Convertimos esos textos a array con la función split
+		   var arrayTexto = texto.split("");
+		   var arrayPass = contrasenia.split("");
+		   var arrayApellido = apellido.split("");
+		   var arrayApellido2 = apellido2.split("");
+		   var arrayTelefono = telefono.split("");
+		   //variables que definiran los validadores
+		   var num = 0;
+		   var numApe = 0;
+		   var numApe2 = 0;
+		   var numTelefono = 0;
+
+
+		   if(arrayTexto.length==0 || arrayPass.length==0){
+
+			   alert("¡No puedes dejar ningún campo vacío!");
+		   
+		   }else{
+
+			   	for(var j = 0; j < 10 ; j++){
+			   		for(var i=0; i<arrayTexto.length; i++){
+			   			if(arrayTexto[i]==numeros[j]){
+			   				num = 1;
+			   			}
+			   		}
+			   	}
+
+			   	for(var j = 0; j < 10 ; j++){
+			   		for(var i=0; i<arrayApellido.length; i++){
+			   			if(arrayApellido[i]==numeros[j]){
+			   				numApe = 1;
+			   			}
+			   		}
+			   	}
+
+			   	for(var j = 0; j < 10 ; j++){
+			   		for(var i=0; i<arrayApellido2.length; i++){
+			   			if(arrayApellido2[i]==numeros[j]){
+			   				numApe2 = 1;
+			   			}
+			   		}
+			   	}
+
+			   	for(var j = 0; j < letras.length ; j++){
+			   		for(var i=0; i<arrayTelefono.length; i++){
+			   			if(arrayTelefono[i]==letras.charAt(j)){
+			   				numTelefono = 1;
+			   			}
+			   		}
+			   	}
+
+				if(num==1){
+					alert("El nombre no puede tener números");
+				}
+				if(numApe==1){
+					alert("El apellido no puede tener números");
+				}
+				if(numApe2==1){
+					alert("El segundo apellido no puede tener números");
+				}
+				if(numTelefono==1){
+					alert("El número de telefono no puede contener caracteres");
+				}
+				if(arrayPass.length<=7){
+					alert("La contraseña tiene que tener más de 8 caracteres");
+				}
+
+		   }
+	}
+    </script>
+</head>
+<body>
+	<h1>Registro de cliente</h1>
+	<hr>
+	<form>
+		<label>Nombre:</label><input type="text" name="nombre" id="nombre"/><br>
+		<br>
+		<label>Primer Apellido:</label><input type="text" name="apellido" id="apellido"/><br>
+		<br>
+		<label>Segundo Apellido:</label><input type="text" name="apellido2" id="apellido2"/><br>
+		<br>
+		<label>Teléfono Contacto:</label><input type="text" name="telefono" id="telefono"/><br>
+		<br>
+		<!--<label>E-mail: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Tipo de Tarjeta: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Número de tarjeta: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Nombre de Usuario: </label><input type="text" name="texto" id="texto"/><br>-->
+		<label>Contraseña: </label><input type="password" name="contrasena" id="contrasena"/><br>
+		<br>
+		<input type="button" name="texto" id="texto" value="Enviar" onclick="tiene_numeros()"/>
+		<input type="button" name="texto" id="texto" value="Borrar"/>
+    </form>
+    <hr>
+</body>
+</html>

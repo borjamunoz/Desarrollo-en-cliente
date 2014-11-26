@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio Formularios 6</title>
+    <script type="text/javascript">
+    	function muestraPrecio(){
+			document.form1.text3.value = document.form1.select1.options [document.form1.select1.selectedIndex].value;
+		}
+    </script>
+</head>
+<body>
+
+         <form name="form1">
+            <select size="1" name="select1" onChange="muestraPrecio()">
+            	<option value="10€">Jamón y Queso</option>
+            	<option value="9€">Mozzarella</option>
+            	<option value="8€">Morrones</option>
+            </select><br>
+            Precio de la Pizza:<input type="text" name="text3">
+         </form>
+</body>
+</html>

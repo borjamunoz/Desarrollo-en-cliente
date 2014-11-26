@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio Formularios 7</title>
+    <script type="text/javascript">
+    	function presupuesto(){
+			document.form1.text2.value = document.form1.select1.options[document.form1.select1.selectedIndex].text;
+			document.form1.text3.value = document.form1.select1.options [document.form1.select1.selectedIndex].value;
+			
+			document.form1.text4.value = document.form1.select2.options[document.form1.select2.selectedIndex].text;
+			document.form1.text5.value = document.form1.select2.options [document.form1.select2.selectedIndex].value;
+			
+			document.form1.text6.value = document.form1.select3.options[document.form1.select3.selectedIndex].text;
+			document.form1.text7.value = document.form1.select3.options [document.form1.select3.selectedIndex].value;
+		}
+		function calculaPresu(){
+			var valor1 = parseInt(document.form1.select1.options [document.form1.select1.selectedIndex].value);
+			var valor2 = parseInt(document.form1.select2.options [document.form1.select2.selectedIndex].value);	
+			var valor3 = parseInt(document.form1.select3.options [document.form1.select3.selectedIndex].value);
+			
+			var suma = valor1+valor2+valor3;
+			
+			document.form1.text8.value=suma+" €";	
+	
+		}
+    </script>
+</head>
+<body>
+
+            <form name="form1">
+            <label>Procesador:</label>
+            <select size="1" name="select1" onChange="presupuesto()">
+            	<option value="400">Pentium III</option>
+            	<option value="500">Pentium IV</option>
+            </select>
+            <label>Monitor:</label>
+            <select size="1" name="select2" onChange="presupuesto()">
+            	<option value="250">Samsung 14'</option>
+            	<option value="350">Samsung 15'</option>
+                <option value="550">Samsung 17'</option>
+            </select>
+            <label>Disco Duro:</label>
+            <select size="1" name="select3" onChange="presupuesto()">
+            	<option value="300">80Gb</option>
+            	<option value="440">240Gb</option>
+                <option value="500">800Gb</option>
+            </select>
+            <br>
+            Procesador:<input type="text" name="text2"><br>
+            Valor asociado:<input type="text" name="text3"><br>
+            Monitor:<input type="text" name="text4"><br>
+            Valor asociado:<input type="text" name="text5"><br>
+            Disco Duro:<input type="text" name="text6"><br>
+            Valor asociado:<input type="text" name="text7"><br>
+            Presupuesto:<input type="text" name="text8"><br>
+            <input type="button" value="presupuesto" onclick="calculaPresu()">
+            </form>
+</body>
+</html>

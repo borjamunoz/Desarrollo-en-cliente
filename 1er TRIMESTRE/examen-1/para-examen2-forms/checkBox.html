@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio Formularios checkBox</title>
+    <script language="JavaScript">
+		function contarSeleccionados(){
+			var cant=0;
+			if (document.form1.lenguaje1.checked)
+				cant++;
+			if (document.form1.lenguaje2.checked)
+				cant++;
+			if (document.form1.lenguaje3.checked)
+				cant++;
+			if (document.form1.lenguaje4.checked)
+				cant++;
+			alert('Conoce ' + cant + ' lenguajes');
+		}
+</script>
+</head>
+<body>
+    <form name="form1">
+        <input type="checkbox" name="lenguaje1">JavaScript<br>
+        <input type="checkbox" name="lenguaje2">PHP<br>
+        <input type="checkbox" name="lenguaje3">JSP<br>
+        <input type="checkbox" name="lenguaje4">VB.Net<br>
+        <input type="button" value="Mostrar" onClick="contarSeleccionados()">
+    </form>
+</body>
+</html>

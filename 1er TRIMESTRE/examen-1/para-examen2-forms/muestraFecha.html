@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+    function muestraFecha(){
+        fechaActual = new Date();
+        dia = fechaActual.getDate();
+        mes = fechaActual.getMonth();
+        anio = fechaActual.getFullYear();
+        var diaMes;
+        switch(mes){
+        	case 0:
+        		diaMes = "enero";
+        		break;
+			case 1:
+        		diaMes = "febrero";
+        		break;
+        	case 2:
+        		diaMes = "marzo";
+        		break;
+        	case 3:
+        		diaMes = "abril";
+        		break;
+        	case 4:
+        		diaMes = "mayo";
+        		break;
+        	case 5:
+        		diaMes = "junio";
+        		break;
+        	case 6:
+        		diaMes = "julio";
+        		break;
+        	case 7:
+        		diaMes = "agosto";
+        		break;
+        	case 8:
+        		diaMes = "septiembre";
+        		break;
+        	case 9:
+        		diaMes = "octubre";
+        		break;
+        	case 10:
+        		diaMes = "noviembre";
+        		break;
+        	case 11:
+        		diaMes = "diciembre";
+        		break;          
+        }
+
+        document.write("Hoy es "+dia+" de "+diaMes+" del año " +anio);
+    }
+</script>
+
+<body onload="muestraFecha()">
+</body>
+
+</html>

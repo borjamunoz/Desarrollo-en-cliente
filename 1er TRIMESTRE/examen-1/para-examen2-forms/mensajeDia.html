@@ -1,0 +1,18 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+    function muestraDia(){
+        fechaActual = new Date();
+
+        var arrayDias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sábado", "domingo"];
+
+        alert("Bienvenido, hoy es: "+arrayDias[fechaActual.getDay()-1]);
+    }
+</script>
+
+<body onload="muestraDia()">
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio Formularios checkBox</title>
+   <script language="JavaScript">
+		function mostrarSeleccionado(){
+		if (document.form1.estudios[0].checked)
+			alert('no tienes estudios');
+		if (document.form1.estudios[1].checked)
+			alert('tienes estudios primarios');
+		if (document.form1.estudios[2].checked)
+			alert('tienes estudios secundarios');
+		if (document.form1.estudios[3].checked)
+			alert('tienes estudios universitarios');
+		}
+	</script>
+</head>
+<body>
+    <form name="form1">
+        <input type="radio" name="estudios" value="sin estudios">Sin estudios
+		<br>
+		<input type="radio" name="estudios">Primarios
+		<br>
+		<input type="radio" name="estudios">Secundarios
+		<br>
+		<input type="radio" name="estudios">Universitarios
+		<br>
+		<input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+    </form>
+</body>
+</html>

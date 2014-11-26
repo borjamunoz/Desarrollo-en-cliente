@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio 2</title>
+    <script type="text/javascript">
+		function tiene_numeros(){
+
+		   var numeros=["0","1","2","3","4","5","6","7","8","9"];
+		   var texto = document.getElementById("nombre").value;
+		   var arrayTexto = texto.split("");
+		   var num = 0;
+		   		for(var j = 0; j < 10 ; j++){
+		   		 for(var i=0; i<arrayTexto.length; i++){
+		   				if(arrayTexto[i]==numeros[j]){
+		   					num = 1;
+		   				}
+		   			}
+		   		}
+		   
+			if(num==1){
+				alert("El nombre no puede tener números");
+			}
+
+			var contrasenia = document.getElementById("contrasena").value;
+			var arrayPass = contrasenia.split("");
+
+			if(arrayPass.length<7){
+				alert("La contraseña tiene que tener más de 8 caracteres");
+			}
+		
+	}
+    </script>
+</head>
+<body>
+	<h1>Registro de cliente</h1>
+	<hr>
+	<form>
+		<label>Nombre: </label><input type="text" name="nombre" id="nombre"/><br>
+		<!--<label>Primer Apellido: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Segundo Apellido: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Teléfono Contacto: </label><input type="text" name="texto" id="texto"/><br>
+		<label>E-mail: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Tipo de Tarjeta: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Número de tarjeta: </label><input type="text" name="texto" id="texto"/><br>
+		<label>Nombre de Usuario: </label><input type="text" name="texto" id="texto"/><br>-->
+		<label>Contraseña: </label><input type="text" name="contrasena" id="contrasena"/><br>
+		<!--<label>Verificar Contraseña: </label><input type="text" name="texto" id="texto"/><br>-->
+		<input type="button" name="texto" id="texto" value="Enviar" onclick="tiene_numeros()"/><br>
+		<input type="button" name="texto" id="texto" value="Borrar"/>
+    </form>
+    <hr>
+</body>
+</html>
