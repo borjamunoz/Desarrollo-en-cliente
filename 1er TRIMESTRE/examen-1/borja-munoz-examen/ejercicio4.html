@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Ejercicio 4</title>
+    <script language="Javascript">
+		
+		var arrayNumeros = new Array();
+		var negativos = 0;
+		var positivos = 0;
+		var mult15 = 0; 
+		var num = 1;
+		var pares = 0;
+
+		for(var i=0; i<10; i++){
+			
+			num = parseInt(prompt("Introduce un número"));
+
+			if(num!=0){
+				arrayNumeros.push(num);
+				
+				alert(arrayNumeros.length);
+								
+				if(num<0){
+					negativos++;
+				}
+				if(num>0){
+					positivos++;
+				}
+				if(num%15==0){
+					mult15++;
+				}
+				if(num%2==0){
+					pares+=num;
+				}
+			}
+		};
+		
+		document.write("El array tiene "+arrayNumeros.length+" números. "+positivos+" son positivos, y "+negativos+" son negativos. Hay "+mult15+" números que son múltiplos de 15. La suma de los pares es: "+pares);
+
+		for(var i = 0; i<arrayNumeros.length; i++){
+			document.write("<br>"+arrayNumeros[i]+"<br>");
+		}
+
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Ejercicio 5</title>
+    <script language="Javascript">
+		
+		var turno1 = new Array();
+		var turno2 = new Array();
+		var turno3 = new Array();
+
+		var suma1 = 0;
+		var suma2 = 0;
+		var suma3 = 0;
+
+		var turnoAlto="";
+
+		for(var i=0; i<5; i++){
+			
+			turno1[i] = parseInt(prompt("Turno de mañana: Introduce la edad número"+(i+1)));
+
+			suma1+= turno1[i];
+
+		};
+
+		for(var i=0; i<6; i++){
+			
+			turno2[i] = parseInt(prompt("Turno de tarde: Introduce la edad número"+(i+1)));
+
+			suma2+= turno2[i];
+
+		};
+
+		for(var i=0; i<11; i++){
+			
+			turno3[i] = parseInt(prompt("Turno de noche: Introduce la edad número"+(i+1)));
+
+			suma3+= turno3[i];
+
+		};
+
+		var medias = [parseInt(suma1/5), parseInt(suma2/6), parseInt(suma3/11)];
+
+		alert(medias.sort());
+
+		if(parseInt(suma1/5)>parseInt(suma2/6) && parseInt(suma1/5)>parseInt(suma3/11)){
+			turnoAlto = 'de mañana';
+		}
+		if(parseInt(suma2/6)>parseInt(suma1/5) && parseInt(suma2/6)>parseInt(suma3/11)){
+			turnoAlto = 'de tarde';
+		}
+		if(parseInt(suma3/11)>parseInt(suma2/6) && parseInt(suma3/11)>parseInt(suma1/5)){
+			turnoAlto = 'de noche';
+		}
+
+		document.write('La media del turno de mañana es: '+parseInt(suma1/5)+'. La media del turno de tarde es: '+parseInt(suma2/6)+'. La media del turno de noche es: '+parseInt(suma3/11)+'<br>');
+		document.write('La media más alta la tiene el turno '+turnoAlto);
+		
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Ejercicio 6</title>
+    <script language="Javascript">
+		
+    	var arrayNumeros = new Array();
+    	var pares = 0;
+    	var impares = 0;
+
+    	for(var i =0; i<5; i++){
+    		arrayNumeros[i] = parseInt(prompt('Introduce un valor por teclado'));
+    		if(arrayNumeros[i]%2==0){
+    			pares++;
+    		}else{
+    			impares++;
+    		}
+    	}
+
+    	document.write('Has introducido: '+pares+' valores pares y '+impares+' impares');
+		
+	</script>
+</head>
+<body>
+</body>
+</html>
